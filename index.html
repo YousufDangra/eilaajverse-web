@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EilaajVerse - Revolutionizing Healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+ <!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <img src="logo.png" alt="EilaajVerse Logo" class="navbar-logo">
+        <a href="#" class="brand-name">EilaajVerse</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    
+    
+    <!-- Navbar Links -->
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#invest">Invest</a></li>
+        <li><a href="#download">Download</a></li>
+        
+    </ul>
+    <button id="whitepaperBtn" class="ctabutton" onclick="openPopup()">📄 Whitepaper</button>
+    <button id="themeToggleMenu" class="theme-toggle-menu" onclick="toggleTheme()">🌙 Dark Mode</button>
+    <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="slide-container">
+        <div class="slide active">
+            <h1>Welcome to <br> <span>EilaajVerse</span></h1>
+            <p>Where Health Care Meets Innovation</p>
+        </div>
+        <div class="slide">
+            <h1>Revolutionizing <br> Healthcare with <br><span>Blockchain & AI</span></h1>
+            <p>A next-generation Blockchain<br> & AI-powered healthcare platform.</p>
+        </div>
+    </div>
+</section>
+
+<!--founder Section -->
+    <section class="founder-section section-spacing fade-in"> 
+        <div class="founder-container">
+            <img src="IMG_2859.jpeg" alt="Ahmad Manzoor" class="founder-image">
+            <div class="quote-content">
+                <p class="quote-text">“The future of healthcare is not just digital—it's intelligent, secure, and global. EilaajVerse is building a world where access to quality healthcare is a right, not a privilege.”</p>
+                <p class="founder-name">Ahmad Manzoor</p>
+                <p class="founder-title">Founder, CEO</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="vision" class="vision-section section-spacing fade-in">
+    <div class="vision-container">
+        <div class="vision-image">
+            <img src="logo.png" alt="Doctor Illustration">
+        </div>
+        <div class="vision-text">
+            <h2>Our Vision</h2>
+            <p>To create a borderless, intelligent, and secure healthcare ecosystem where everyone has access to quality medical care and seamless health management—anytime, anywhere.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section section-spacing fade-in">
+        <h2><strong>  Our Mission </strong></h2>
+        <div class="mission-list">
+            <ul> 
+                <li><strong>Empowering Patients</strong> – Giving users full control of their health data using secure Blockchain digital identities.</li> <br>
+                <li><strong>Revolutionizing Healthcare Delivery</strong> – AI-driven diagnostics and telemedicine for personalized and affordable care.</li> <br>
+                <li><strong>Enhancing Transparency</strong> – Blockchain ensures ethical medical practices and eliminates counterfeit medicines.</li> <br>
+                <li><strong>Global Healthcare Transformation</strong> – Accessible world-class medical services for all nations.</li> <br>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-spacing fade-in">
+        <h2>Our Core Features</h2>
+        <div class="features-grid">
+            <div class="feature-card"> On-Chain Health Records – Patient-controlled and secure records on Blockchain.</div>
+            <div class="feature-card"> AI-Powered Virtual Doctor – 24/7 AI health consultations with predictive diagnostics.</div>
+            <div class="feature-card"> Secure Digital Identities – Blockchain-verified unique ID for safe transactions.</div>
+            <div class="feature-card"> Telemedicine – Real-time virtual consultations and remote patient monitoring.</div>
+            <div class="feature-card"> Blockchain Supply Chain – Authenticity tracking to prevent counterfeit drugs.</div>
+            <div class="feature-card"> Global Access – Seamless cross-border healthcare via Blockchain.</div>
+            <div class="feature-card"> AI Health Insights – Personalized health analytics and predictive health monitoring.</div>
+            <div class="feature-card"> Smart Medical Assistance – 24/7 multilingual virtual assistant for medical guidance.</div>
+        </div>
+    </section>
+
+    <!-- Invest Section -->
+<section id="invest" class="section section-spacing fade-in">
+    <h2>Invest in the Future of Healthcare</h2>
+    <p>EilaajVerse is not just a local solution—it’s a global revolution. With a scalable model and high-growth potential, we’re inviting investors to join us in transforming the $12 trillion global healthcare market. Our innovative ecosystem ensures sustainability, profitability, and impact-driven success.</p>
+    <a href="#" class="cta-button" onclick="openPopup()">WhitePaper</a>
+</section>
+
+<!-- Popup Notification (Initially Hidden) -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-box">
+        <div class="popup-header">
+            <h3>White Paper</h3>
+            <span class="close-btn" onclick="closesPopup()">&times;</span>
+        </div>
+        <iframe id="pdfFrame" src="WhitePaper.pdf"></iframe>
+    </div>
+</div>
+
+    
+    <!-- Download Section -->
+    <section id="download" class="section section-spacing fade-in">
+        <h2>Get the App</h2>
+        <p>Be a part of the healthcare transformation. Let’s shape the future together!</p>
+    
+        <div class="button-container">
+            <!-- Google Play Button -->
+            <button class="download-btn" onclick="showPopup()"> <!-- window.location.href='https://play.google.com/store/games?hl=en'" -->
+                <img src="google-play-text-logo.svg" alt="Google Play" width="80" height="80" class="google">
+                <img src="google-play.png" alt="Google Logo" width="60" height="60" class="google">
+            </button>
+    
+            <!-- App Store Button -->
+            <button class="download-btn" onclick="showPopup()">
+                <img src="apple-logo.svg" alt="Apple Store" width="40" height="80" class="apple">
+            </button>
+        </div>
+    
+        <!-- Popup Notification -->
+        <div id="popupNotification" class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p>Stay connected for more updates and insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Connect with us:</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>&copy; 2025 EilaajVerse. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
