@@ -16,7 +16,7 @@ body {
 
 .header {
   background: #000000;
-  padding: 20px 40px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ body {
 
 .hero {
   text-align: center;
-  padding: 100px 20px 50px;
+  padding: 50px 20px 50px;
   background: linear-gradient(to center, #09c5cc48, #000000);
 }
 
@@ -325,7 +325,7 @@ background-size: 40px 40px;
 }
 
 .invest .store-links button {
-  margin: 5px;
+  margin: 12px;
   gap: 20px;
   padding: 15px 30px;
   background: #5798dada;
@@ -414,6 +414,7 @@ background-size: 40px 40px;
 
   .btn-container {
     flex-direction: column;
+    padding-left: inherit;
   }
 
   .glow-btn {
