@@ -70,7 +70,25 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #ffffff;
+  
 }
+
+.partners {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.partner-subtext {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:  #ffffffc4;
+  margin-top: 10px;
+}
+
+.partners .stats div {
+  margin: 20px;
+}
+
 
 
 .nav a {
