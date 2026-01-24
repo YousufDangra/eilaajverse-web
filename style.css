@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #000000;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #fff;
+  
+}
+
+.header {
+  background: #000000;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: black;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 85px;
+  width: 85px;
+}
+
+.nav img{
+  height: 35px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  
+}
+
+.partners {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.partner-subtext {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:  #ffffffc4;
+  margin-top: 10px;
+}
+
+.partners .stats div {
+  margin: 20px;
+}
+
+
+
+.nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  color: #5798dada;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px 50px;
+  background: linear-gradient(to center, #09c5cc48, #000000);
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #0fe9e9da;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffffc4;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.glow-btn {
+  font-size: 20px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(87, 152, 218, 0.85);
+  transition: 0.3s;
+}
+
+.glow-btn.filled {
+  background-color: rgba(87, 152, 218, 0.85);
+  color: #ffffff;
+  border: none;
+}
+
+.glow-btn.outlined {
+  background-color: transparent;
+  border: 2px solid #5798dada;
+  color: #ffffffda;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 25px rgba(87, 152, 218, 0.85), 0 0 15px rgba(87, 152, 218, 0.85);
+  transform: translateY(-2px);
+}
+
+.ceo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ceo-image-wrapper {
+  border: 2px solid #5798dada;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 0 0 30px rgba(87, 152, 218, 0.85);
+  margin-bottom: 30px;
+}
+
+.ceo-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.quote-box {
+  max-width: 800px;
+  padding: 30px 20px;
+  border: 1px solid #5798dada;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(87, 152, 218, 0.85);
+  background-color: transparent;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.quote-author span {
+  color: #5798dada;
+  font-weight: 600;
+}
+
+
+.mission {
+  background: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.mission h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffffc4;
+}
+
+.mission .stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.mission .stats div {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  border: 1px solid #5798dada;
+}
+
+.vision {
+  background: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.vision h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.vision p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffffc4;
+  text-align: center;
+  line-height: 1.5%;
+}
+
+.vision .stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.vision .stats div {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  border: 1px solid #5798dada;
+}
+
+.features {
+  background: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.features h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.features p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffffc4;
+  text-align: center;
+  line-height: 1.5%;
+}
+
+.features .stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.features .stats div {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  border: 1px solid #5798dada;
+}
+
+.invest {
+  background: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.invest h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.invest p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffffc4;
+  text-align: center;
+  
+}
+
+.invest .store-links button {
+  margin: 12px;
+  gap: 20px;
+  padding: 15px 30px;
+  background: #5798dada;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(87, 152, 218, 0.85), 0 0 15px rgba(87, 152, 218, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.invest .store-links button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(87, 152, 218, 0.85), 0 0 40px rgba(87, 152, 218, 0.85);
+}
+
+
+.ev {
+  background: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.062) 1px, transparent 1px),
+  linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.ev h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.ev p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffffe0;
+  text-align: center;
+  line-height: 1.5%;
+}
+
+.ev .stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.ev .stats div {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  border: 1px solid #5798dada;
+}
+
+.footer {
+  background: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer a {
+  color: #5798dada;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .mission .stats,
+  .features .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mission .stats div,
+  .features .stats div {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    padding-left: inherit;
+  }
+
+  .glow-btn {
+    width: 90%;
+    text-align: center;
+  }
+
+  .ev .stats,
+  .vision .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ev .stats div,
+  .vision .stats div {
+    width: 90%;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .mission h2,
+  .features h2
+{
+    font-size: 32px;
+  }
+}
